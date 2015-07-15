@@ -298,3 +298,46 @@ puts "            Result 5.is_a?(Integer) is: #{5.is_a?(Integer) }"
 puts "            Result 5.kind_of?(Integer) is: #{5.kind_of?(Integer) }"
 puts "            Result 5.instance_of?(Integer) is: #{5.instance_of?(Integer) }"
 puts "            Result 5.instance_of?(Fixnum) is: #{5.instance_of?(Fixnum) }"
+puts "\n38. How can you make a string into a symbol?
+\"abc\".to_sym            # => :abc"
+puts "Result \"abc\".to_sym  is: #{"abc".to_sym }"
+puts "\n39. Build a symbol that has spaces in it.?
+\"This is a string\".to_sym            # => :\"This is a string\""
+puts "Result \"This is a string\".to_sym  is: -----#{"This is a string".to_sym }"
+puts "\n40. Build a symbol with interpolation.
+\"This is an self.class\".to_sym    # => :\"This is an Object\""
+puts "Result \"This is an self.class\".to_sym is: #{"This is an #{self.class}".to_sym }"
+puts "\n41. What does require do? Demonstrate its call?
+It will load and execute the file at runtime.   require \'filename.rb\'"
+puts "\n42. What is the difference between Array and Hash?
+An Array is an ordered list of values and a Hash is an unordered set of key/value pairs.
+An Array has an index that must be an integer and a Hash has a key that can be any object.
+An Array is also called List and a Hash is also called Map.
+An Array literals are defined with [ ] and  a Hash - defined with { }, but both are accessed with [ ]"
+puts "\n43. How do you comment out a line and a block of code?
+01	# Text
+02	=begin
+03	    Text
+04	=end"
+puts "\n44. Show an example of parallel assignment in Ruby.
+a, b = b, a"
+puts "\n45. What is __FILE__?
+It is a reference to the current file name (Pseudo variable)."
+puts "\n46. What are BEGIN and END?
+BEGIN {} and END {} are BLOCKS that are executed when a file is loaded."
+puts "\n47. What are the basic data types in Ruby?
+Array, Bignum, FalseClass, Fixnum, Float, Hash, String, Symbol, Time, TrueClass"
+puts "\n48. How can you define a shell command in Ruby script?
+Answer: Using grave accent `command`\'ruby -v\' or %x{}"
+puts "Result of %x{ruby -v} is #{%x{ruby -v}}"
+puts "Result of \'{ruby -v}\' is #{'{ruby -v}'}"
+puts "\n50. What is the difference between require and include?
+Require and include both just insert the code in the script.
+Unlike include, require will always read in the target file and returns the fatal error if file doesnt exist."
+
+
+
+
+
+
+
